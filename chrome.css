@@ -1,0 +1,103 @@
+:root{
+    --blur: #4c8bf5;
+    --red: #dd5144;
+    --yellow: #ffcd46;
+    --green: #1da462;
+}
+
+.chrome{
+    position: relative;
+    height: 210px;
+    width: 210px;
+    margin: auto;
+    top: 30vh;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: scale(1.3);
+}
+
+.circle{
+    position: absolute;
+    height: 104px;
+    width: 104px;
+    background: rgb(216, 216, 216);
+    border-radius: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    top: 50%;
+    left: 50%;
+}
+
+.blue{
+    position: absolute;
+    height: 86px;
+    width: 86px;
+    background: var(--blur);
+    border-radius: 50%;
+    margin-left: -43px;
+    margin-top: -43px;
+    top: 50%;
+    left: 50%;
+}
+
+.red{
+    width: 200px;
+    height: 60px;
+    background: var(--red);
+    position: absolute;
+    top: 0;
+    left: 34px;
+}
+
+.red::after{
+    content: "";
+    width: 200px;
+    height: 60px;
+    background: var(--red);
+    position: absolute;
+    top: 0;
+    left: -91px;
+    transform: rotate(60deg);
+}
+
+.yellow{
+    width: 200px;
+    height: 60px;
+    background: var(--yellow);
+    position: absolute;
+    top: 131px;
+    left: 60px;
+    transform: rotate(120deg);
+}
+
+.yellow::after{
+    content: "";
+    width: 200px;
+    height: 60px;
+    background: var(--yellow);
+    position: absolute;
+    top: 0;
+    left: -88px;
+    transform: rotate(60deg);
+}
+
+.green{
+    width: 200px;
+    height: 60px;
+    background: var(--green);
+    position: absolute;
+    top: 88px;
+    left: -75px;
+    transform: rotate(-120deg);
+}
+
+.green::after{
+    content: "";
+    width: 200px;
+    height: 60px;
+    background: var(--green);
+    position: absolute;
+    top: 0;
+    left: -91px;
+    transform: rotate(60deg);
+}
